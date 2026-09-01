@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Image Carousel</h1>
+
+        <div class="carousel">
+            <img id="carouselImage"
+                 src="https://picsum.photos/id/1015/800/400"
+                 alt="Carousel Image">
+
+            <button class="prev" onclick="previousImage()">❮</button>
+            <button class="next" onclick="nextImage()">❯</button>
+        </div>
+
+        <p id="imageNumber">Image 1 of 4</p>
+
+        <div class="dots">
+            <span class="dot active" onclick="showImage(0)"></span>
+            <span class="dot" onclick="showImage(1)"></span>
+            <span class="dot" onclick="showImage(2)"></span>
+            <span class="dot" onclick="showImage(3)"></span>
+        </div>
+
+        <footer>
+            <p>Name: ASHWIN H</p>
+            <p>Register Number: 212225230025</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
